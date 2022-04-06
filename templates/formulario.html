@@ -1,6 +1,6 @@
-{%extends 'base.html'%}
+{%extends 'base_estilos.html'%}
 
-{%block title%}Home{%endblock%}
+{%block title%}Formulario{%endblock%}
 
 {%block content%}
 <!-- <form action="/guardar" method="post">
@@ -76,8 +76,7 @@
       {%if (mis_vehiculos) and  v[0] in mis_vehiculos%}checked{%endif%}>
       <label for="vh{{v[0]}}">{{v[1]}}</label><br>
     {%endfor%}
-    <br><br>        
-    <hr><br>
+    <br>
     <input type="submit" value="Enviar">
 </form> 
 </div>

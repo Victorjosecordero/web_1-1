@@ -7,7 +7,7 @@ BASE_DATOS = os.path.join(os.path.dirname(__file__),'personas.db' )
 
 
 
-@route('/static/<filename>')
+@route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename,root='./static')
 
